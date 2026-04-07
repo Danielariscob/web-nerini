@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Nivel Inicial — IE 7034 Enrique Nerini Collazos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<style>
+.level-hero{padding:calc(var(--nav-h) + 4rem) clamp(1.5rem,6vw,4rem) 5rem;position:relative;overflow:hidden;}
+.level-hero.inicial{background:linear-gradient(155deg,#0f3460 0%,#1a4d7e 50%,var(--sky) 100%);}
+.level-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 55% 60% at 75% 45%,rgba(106,175,217,.3) 0%,transparent 65%);pointer-events:none;}
+.level-hero::after{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(-55deg,rgba(255,255,255,.02) 0px,rgba(255,255,255,.02) 1px,transparent 1px,transparent 40px);pointer-events:none;}
+.level-hero-inner{position:relative;z-index:1;max-width:780px;}
+.level-big-icon{font-size:4rem;margin-bottom:1.5rem;}
+.level-hero h1{font-family:var(--font-head);font-size:clamp(2.4rem,5.5vw,4.2rem);font-weight:900;color:var(--white);line-height:1.06;margin-bottom:1.2rem;}
+.level-hero h1 span{color:var(--gold);}
+.level-hero p{font-size:1.1rem;color:rgba(255,255,255,.7);max-width:560px;line-height:1.75;}
+
+.info-band{background:var(--sky);padding:1.5rem clamp(1.5rem,5vw,3rem);}
+.info-band-inner{max-width:1100px;margin:0 auto;display:flex;gap:3rem;flex-wrap:wrap;align-items:center;}
+.info-item{display:flex;align-items:center;gap:12px;color:var(--white);}
+.info-item .ii-icon{font-size:1.5rem;}
+.info-item p{font-size:.88rem;font-weight:500;line-height:1.4;}
+.info-item strong{display:block;font-size:.78rem;opacity:.75;font-weight:400;}
+
+.content-section{padding:clamp(3.5rem,6vw,5.5rem) clamp(1.5rem,5vw,3rem);max-width:1100px;margin:0 auto;}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start;}
+.feature-list{margin-top:2.5rem;}
+.feature-item{display:flex;gap:14px;align-items:flex-start;padding:1.2rem;border-radius:var(--radius-sm);transition:background .2s;margin-bottom:.5rem;}
+.feature-item:hover{background:var(--paper);}
+.feature-item .fi-icon{width:44px;height:44px;border-radius:10px;background:var(--sky-pale);display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0;}
+.feature-item h4{font-family:var(--font-head);font-size:.95rem;font-weight:700;color:var(--navy);margin-bottom:.25rem;}
+.feature-item p{font-size:.87rem;color:var(--gray);line-height:1.6;}
+
+.highlight-box{background:linear-gradient(155deg,var(--navy) 0%,var(--navy-light) 100%);border-radius:var(--radius);padding:2.5rem;color:var(--white);}
+.highlight-box h3{font-family:var(--font-head);font-size:1.4rem;font-weight:800;color:var(--gold);margin-bottom:1.2rem;}
+.highlight-box p{font-size:.92rem;color:rgba(255,255,255,.72);line-height:1.75;margin-bottom:1rem;}
+.highlight-box ul{padding-left:1.2rem;}
+.highlight-box ul li{font-size:.9rem;color:rgba(255,255,255,.7);line-height:1.7;list-style:disc;}
+
+.areas-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem;margin-top:3rem;}
+.area-card{background:var(--white);border-radius:var(--radius);padding:1.8rem 1.5rem;text-align:center;border:1px solid var(--gray-light);transition:transform .22s,box-shadow .22s;}
+.area-card:hover{transform:translateY(-4px);box-shadow:0 10px 28px rgba(11,31,58,.1);}
+.area-card .ac-icon{font-size:2rem;margin-bottom:.8rem;}
+.area-card h4{font-family:var(--font-head);font-size:.95rem;font-weight:700;color:var(--navy);margin-bottom:.4rem;}
+.area-card p{font-size:.82rem;color:var(--gray);}
+
+@media(max-width:760px){.two-col{grid-template-columns:1fr;}.info-band-inner{gap:1.5rem;}}
+</style>
+</head>
+<body>
+<div class="page-wrap">
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <div class="brand-icon">
+        <img src="imagenes/logo.png" alt="Enrique Nerini">
+      </div>      <div class="brand-text"><span class="brand-num">IE 7034</span><span class="brand-name">Enrique Nerini Collazos</span></div></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li><li><a href="institucion.html">Nuestra Institución</a></li>
+      <li class="has-drop"><a href="#" class="current">Niveles ▾</a><ul class="dropdown"><li><a href="inicial.html" class="current">Nivel Inicial</a></li><li><a href="primaria.html">Nivel Primaria</a></li><li><a href="secundaria.html">Nivel Secundaria</a></li></ul></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu"><a href="index.html">🏠 Inicio</a><a href="institucion.html">🏛️ Nuestra Institución</a><a href="inicial.html">🌱 Nivel Inicial</a><a href="primaria.html">📚 Nivel Primaria</a><a href="secundaria.html">🎓 Nivel Secundaria</a><a href="contacto.html">✉️ Contacto</a><a href="https://www.facebook.com/IE7034NERINI.OFICIAL/?locale=es_LA" target="_blank">📘 Facebook</a></div>
+</nav>
+
+<div class="level-hero inicial">
+  <div class="level-hero-inner fade-up">
+    <div class="level-big-icon">🌱</div>
+    <h1>Nivel <span>Inicial</span><br>Los primeros pasos</h1>
+    <p>El inicio de un gran camino. Aquí los más pequeños descubren el mundo, desarrollan su creatividad y construyen los cimientos de su aprendizaje con amor y alegría.</p>
+    <div style="margin-top:2rem;display:flex;gap:12px;flex-wrap:wrap;">
+      <a href="contacto.html" class="btn btn-sky">Información de matrícula</a>
+      <a href="contacto.html" class="btn btn-outline-white">Contáctanos</a>
+    </div>
+  </div>
+</div>
+
+<div class="info-band">
+  <div class="info-band-inner">
+    <div class="info-item"><span class="ii-icon">👶</span><p><strong>Edad</strong>3 a 5 años</p></div>
+    <div class="info-item"><span class="ii-icon">🕐</span><p><strong>Horario</strong>Turno mañana y tarde</p></div>
+    <div class="info-item"><span class="ii-icon">📍</span><p><strong>Sede</strong>Jr. Justo Naveda cdra. 3, Chorrillos</p></div>
+  </div>
+</div>
+
+<div class="content-section">
+  <div class="two-col">
+    <div class="fade-up">
+      <span class="tag-label">Propuesta pedagógica</span>
+      <h2 class="sec-title">Aprender <span>jugando</span></h2>
+      <p style="color:var(--gray);line-height:1.75;margin-bottom:1rem;">En el Nivel Inicial de la IE 7034, creemos que el juego es la forma más natural y poderosa de aprendizaje en la primera infancia. Nuestros docentes crean ambientes seguros, estimulantes y llenos de afecto donde cada niño puede explorar, preguntar y crecer a su propio ritmo.</p>
+      <p style="color:var(--gray);line-height:1.75;">Seguimos el Currículo Nacional de Educación Básica (CNEB) con enfoques activos que respetan las etapas de desarrollo de cada niño.</p>
+      <div class="feature-list">
+        <div class="feature-item"><div class="fi-icon">🎨</div><div><h4>Expresión y creatividad</h4><p>Arte, música y juego libre para desarrollar la imaginación.</p></div></div>
+        <div class="feature-item"><div class="fi-icon">🗣️</div><div><h4>Comunicación oral</h4><p>Estimulamos el lenguaje a través de cuentos, canciones y diálogos.</p></div></div>
+        <div class="feature-item"><div class="fi-icon">🤝</div><div><h4>Socialización</h4><p>Aprenden a convivir, compartir y resolver conflictos positivamente.</p></div></div>
+        <div class="feature-item"><div class="fi-icon">🔢</div><p style="display:none"></p><div><h4>Pre-matemática</h4><p>Nociones de cantidad, espacio y tiempo de forma lúdica.</p></div></div>
+      </div>
+    </div>
+    <div class="fade-up-2">
+      <div class="highlight-box">
+        <h3>¿Por qué el Nivel Inicial es tan importante?</h3>
+        <p>Los primeros cinco años de vida son el período de mayor desarrollo neurológico en el ser humano. Las experiencias, vínculos y aprendizajes que ocurren en esta etapa marcan la base de todo el desarrollo posterior.</p>
+        <p>En nuestra IE, el Nivel Inicial es mucho más que preparación para la primaria: es el espacio donde se forman el carácter, la curiosidad y el amor por aprender.</p>
+        <ul>
+          <li>Desarrollo de autonomía y autoconfianza</li>
+          <li>Estimulación multisensorial</li>
+          <li>Vínculo seguro con docentes y pares</li>
+          <li>Hábitos de higiene, orden y convivencia</li>
+          <li>Trabajo colaborativo con las familias</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="background:var(--paper);padding:clamp(3rem,6vw,5rem) clamp(1.5rem,5vw,3rem);">
+  <div style="max-width:1100px;margin:0 auto;">
+    <span class="tag-label">Áreas de desarrollo</span>
+    <h2 class="sec-title">Lo que <span>aprenden</span> nuestros pequeños</h2>
+    <div class="areas-grid">
+      <div class="area-card"><div class="ac-icon">📚</div><h4>Comunicación</h4><p>Lenguaje oral, escucha activa e inicio de la lectoescritura</p></div>
+      <div class="area-card"><div class="ac-icon">🔢</div><h4>Matemática</h4><p>Nociones numéricas, patrones y resolución de problemas concretos</p></div>
+      <div class="area-card"><div class="ac-icon">🌿</div><h4>Ciencia y Ambiente</h4><p>Exploración del entorno natural y social cercano</p></div>
+      <div class="area-card"><div class="ac-icon">🎭</div><h4>Personal Social</h4><p>Identidad, autoestima y relaciones interpersonales</p></div>
+      <div class="area-card"><div class="ac-icon">🎵</div><h4>Arte y Cultura</h4><p>Expresión plástica, musical y corporal</p></div>
+      <div class="area-card"><div class="ac-icon">⛪</div><h4>Educación Religiosa</h4><p>Valores y espiritualidad en el marco del respeto y la inclusión</p></div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div style="margin-bottom:.6rem;"><span style="font-family:var(--font-head);font-size:1rem;color:var(--gold);font-weight:900;letter-spacing:.08em;">IE 7034</span><br><span style="font-size:1.1rem;color:var(--white);font-weight:700;">Enrique Nerini Collazos</span></div>
+      <p style="margin-top:.8rem;">Uno de los colegios más antiguos y queridos de Chorrillos.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Menú</h4>
+      <a href="index.html">Inicio</a>
+      <a href="institucion.html">Nuestra Institución</a>
+      <a href="inicial.html">Nivel Inicial</a>
+      <a href="primaria.html">Nivel Primaria</a>
+      <a href="secundaria.html">Nivel Secundaria</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+    <div class="footer-col">
+      <h4>Síguenos</h4>
+      <a href="https://www.facebook.com/IE7034NERINI.OFICIAL/?locale=es_LA" 
+        target="_blank" 
+        style="color:#F4F8FC; font-weight:600; display:flex; align-items:center; gap:6px; text-decoration:none;">
+
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#F4F8FC" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22 12.07C22 6.48 17.52 2 11.93 2C6.48 2 2 6.48 2 12.07C2 17.06 5.66 21.18 10.44 22V14.89H7.9V12.07H10.44V9.93C10.44 7.41 11.93 6.03 14.22 6.03C15.3 6.03 16.44 6.21 16.44 6.21V8.7H15.19C13.96 8.7 13.56 9.47 13.56 10.26V12.07H16.33L15.89 14.89H13.56V22C18.34 21.18 22 17.06 22 12.07Z"/>
+        </svg>
+      </a>
+    <div style="margin-top:1.5rem;"><h4 style="margin-bottom:.6rem;">Dirección</h4><p style="font-size:.84rem;line-height:1.7;color:rgba(255,255,255,.55);">Ca. Julio Calero cdra. 3<br>Urb. Barrio Chorrillos<br>Lima, Perú</p></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Todos los derechos reservados.</span>
+    <a href="https://www.facebook.com/IE7034NERINI.OFICIAL/?locale=es_LA" 
+      target="_blank" 
+      style="color:#F4F8FC; font-weight:600; display:flex; align-items:center; gap:6px; text-decoration:none;">
+
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="#F4F8FC" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22 12.07C22 6.48 17.52 2 11.93 2C6.48 2 2 6.48 2 12.07C2 17.06 5.66 21.18 10.44 22V14.89H7.9V12.07H10.44V9.93C10.44 7.41 11.93 6.03 14.22 6.03C15.3 6.03 16.44 6.21 16.44 6.21V8.7H15.19C13.96 8.7 13.56 9.47 13.56 10.26V12.07H16.33L15.89 14.89H13.56V22C18.34 21.18 22 17.06 22 12.07Z"/>
+      </svg>
+      Facebook Oficial
+    </a>  
+</div>
+</footer>
+</div>
+<script src="shared.js"></script>
+</body>
+</html>
