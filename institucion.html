@@ -17,14 +17,14 @@
 .page-hero h1 span{color:var(--gold);}
 .page-hero p{font-size:1.1rem;color:rgba(255,255,255,.65);max-width:560px;line-height:1.75;}
 
-/* Timeline Nerini */
+/* Nerini section */
 .nerini-section{background:var(--white);padding:clamp(4rem,7vw,6rem) clamp(1.5rem,5vw,3rem);}
 .nerini-inner{max-width:1100px;margin:0 auto;}
 .nerini-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:4rem;align-items:start;margin-top:3rem;}
 .nerini-portrait{background:linear-gradient(155deg,var(--navy) 0%,var(--navy-light) 100%);border-radius:20px;padding:3rem 2.5rem;text-align:center;color:var(--white);position:relative;overflow:hidden;}
 .nerini-portrait::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% 30%,rgba(59,139,196,.3) 0%,transparent 65%);}
 .nerini-portrait-inner{position:relative;z-index:1;}
-.portrait-circle{width:110px;height:110px;border-radius:50%;background:rgba(59,139,196,.25);border:3px solid rgba(59,139,196,.5);display:flex;align-items:center;justify-content:center;overflow: hidden;margin:0 auto 1.5rem;font-size:3rem;}
+.portrait-circle{width:110px;height:110px;border-radius:50%;background:rgba(59,139,196,.25);border:3px solid rgba(59,139,196,.5);display:flex;align-items:center;justify-content:center;overflow:hidden;margin:0 auto 1.5rem;font-size:3rem;}
 .nerini-portrait h3{font-family:var(--font-head);font-size:1.7rem;font-weight:900;color:var(--white);margin-bottom:.4rem;}
 .nerini-portrait .years{font-size:.9rem;color:var(--gold);font-weight:700;letter-spacing:.06em;margin-bottom:1.5rem;}
 .nerini-portrait .quick-facts{text-align:left;margin-top:1.8rem;}
@@ -33,7 +33,6 @@
 .quick-fact .icon{font-size:1rem;flex-shrink:0;margin-top:2px;}
 .quick-fact p{font-size:.84rem;color:rgba(255,255,255,.72);line-height:1.5;}
 .quick-fact strong{color:var(--sky-light);}
-
 .nerini-bio h3{font-family:var(--font-head);font-size:1.6rem;font-weight:800;color:var(--navy);margin-bottom:1.2rem;}
 .nerini-bio p{font-size:.97rem;color:var(--gray);line-height:1.8;margin-bottom:1.1rem;}
 .nerini-bio strong{color:var(--navy);}
@@ -47,7 +46,7 @@
 .tl-item h4{font-family:var(--font-head);font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:.3rem;}
 .tl-item p{font-size:.88rem;color:var(--gray);line-height:1.6;}
 
-/* Legado cards */
+/* Legado */
 .legado-bg{background:var(--paper);padding:clamp(3.5rem,6vw,5.5rem) clamp(1.5rem,5vw,3rem);}
 .legado-inner{max-width:1100px;margin:0 auto;}
 .legado-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem;margin-top:3rem;}
@@ -57,7 +56,7 @@
 .legado-card h4{font-family:var(--font-head);font-size:1.1rem;font-weight:800;color:var(--navy);margin-bottom:.6rem;}
 .legado-card p{font-size:.9rem;color:var(--gray);line-height:1.65;}
 
-/* Chorrillos connection */
+/* Chorrillos */
 .chorrillos-section{background:var(--navy);padding:clamp(4rem,7vw,6rem) clamp(1.5rem,5vw,3rem);position:relative;overflow:hidden;}
 .chorrillos-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 60% at 80% 40%,rgba(59,139,196,.2) 0%,transparent 65%);}
 .chorrillos-inner{max-width:1100px;margin:0 auto;position:relative;z-index:1;}
@@ -75,15 +74,45 @@
 .mvv-inner{max-width:1100px;margin:0 auto;}
 .mvv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem;}
 .mvv-card{border-radius:var(--radius);padding:2.5rem 2rem;text-align:center;}
-.mvv-card.misión{background:var(--sky);color:var(--white);}
-.mvv-card.visión{background:var(--navy);color:var(--white);}
+.mvv-card.mision{background:var(--sky);color:var(--white);}
+.mvv-card.vision{background:var(--navy);color:var(--white);}
 .mvv-card.valores{background:var(--paper);color:var(--ink);}
 .mvv-card h3{font-family:var(--font-head);font-size:1.3rem;font-weight:900;margin-bottom:1rem;}
 .mvv-card.valores h3{color:var(--navy);}
 .mvv-card p{font-size:.92rem;line-height:1.7;opacity:.88;}
 .mvv-icon{font-size:2.5rem;margin-bottom:1.2rem;}
 
-@media(max-width:820px){.nerini-grid{grid-template-columns:1fr;}.chorrillos-grid{grid-template-columns:1fr;}.mvv-grid{grid-template-columns:1fr;}}
+/* ── EQUIPO DIRECTIVO ── */
+.directivo-bg{background:var(--paper);padding:clamp(3.5rem,6vw,5.5rem) clamp(1.5rem,5vw,3rem);}
+.directivo-inner{max-width:1100px;margin:0 auto;}
+.directivo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.5rem;margin-top:3rem;}
+.directivo-card{background:var(--white);border-radius:var(--radius);padding:2rem 1.8rem;border:1px solid var(--gray-light);text-align:center;transition:transform .25s,box-shadow .25s;position:relative;overflow:hidden;}
+.directivo-card::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--navy),var(--sky));}
+.directivo-card:hover{transform:translateY(-4px);box-shadow:0 12px 36px rgba(11,31,58,.1);}
+.directivo-card.director::before{background:linear-gradient(90deg,var(--gold),var(--warm, #c8522a));}
+.directivo-avatar{width:64px;height:64px;border-radius:50%;background:var(--sky-pale);border:3px solid var(--sky);display:flex;align-items:center;justify-content:center;font-size:1.6rem;margin:0 auto 1.2rem;}
+.directivo-card.director .directivo-avatar{background:rgba(240,165,0,.15);border-color:var(--gold);}
+.directivo-role{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--sky);margin-bottom:.5rem;}
+.directivo-card.director .directivo-role{color:var(--gold);}
+.directivo-name{font-family:var(--font-head);font-size:1rem;font-weight:800;color:var(--navy);line-height:1.3;}
+
+/* ── PLANA DOCENTE ── */
+.docente-bg{background:var(--white);padding:clamp(3.5rem,6vw,5.5rem) clamp(1.5rem,5vw,3rem);}
+.docente-inner{max-width:1100px;margin:0 auto;}
+.docente-tabs{display:flex;gap:8px;margin-top:2.5rem;border-bottom:2px solid var(--gray-light);padding-bottom:0;}
+.tab-btn{padding:10px 22px;border:none;background:none;font-family:var(--font-body);font-size:.9rem;font-weight:600;color:var(--gray);cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px;transition:color .2s,border-color .2s;border-radius:var(--radius-sm) var(--radius-sm) 0 0;}
+.tab-btn:hover{color:var(--navy);}
+.tab-btn.active{color:var(--sky);border-bottom-color:var(--sky);}
+.tab-panel{display:none;padding-top:2rem;}
+.tab-panel.active{display:block;}
+.docente-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem;}
+.docente-card{background:var(--paper);border-radius:var(--radius-sm);padding:1.2rem 1.4rem;display:flex;align-items:center;gap:12px;border:1px solid var(--gray-light);transition:background .2s,transform .2s;}
+.docente-card:hover{background:var(--sky-pale);transform:translateX(3px);}
+.docente-initial{width:40px;height:40px;border-radius:50%;background:var(--sky);display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:800;color:var(--white);flex-shrink:0;font-family:var(--font-head);}
+.docente-card p{font-size:.84rem;font-weight:600;color:var(--navy);line-height:1.35;}
+.docente-card span{font-size:.76rem;color:var(--gray);}
+
+@media(max-width:820px){.nerini-grid{grid-template-columns:1fr;}.chorrillos-grid{grid-template-columns:1fr;}.mvv-grid{grid-template-columns:1fr;}.docente-tabs{flex-wrap:wrap;}}
 </style>
 </head>
 <body>
@@ -93,23 +122,32 @@
   <div class="nav-inner">
     <a class="brand" href="index.html">
       <div class="brand-icon">
-        <img src="imagenes/logo.png" alt="Enrique Nerini">
-      </div>      
+        <img src="imagenes/logo.png" alt="Enrique Nerini" style="width:100%;height:100%;object-fit:cover;border-radius:10px;" onerror="this.style.display='none';this.parentElement.innerHTML='<svg viewBox=\'0 0 40 40\' fill=\'none\'><path d=\'M20 5L5 13V27L20 35L35 27V13L20 5Z\' stroke=\'white\' stroke-width=\'1.8\' fill=\'rgba(255,255,255,0.1)\'/><text x=\'13.5\' y=\'25.5\' font-size=\'14\' font-weight=\'900\' fill=\'white\' font-family=\'Georgia,serif\'>N</text></svg>';">
+      </div>
       <div class="brand-text"><span class="brand-num">IE 7034</span><span class="brand-name">Enrique Nerini Collazos</span></div>
     </a>
     <ul class="nav-links">
       <li><a href="index.html">Inicio</a></li>
       <li><a href="institucion.html" class="current">Nuestra Institución</a></li>
       <li class="has-drop"><a href="#">Niveles ▾</a><ul class="dropdown"><li><a href="inicial.html">Nivel Inicial</a></li><li><a href="primaria.html">Nivel Primaria</a></li><li><a href="secundaria.html">Nivel Secundaria</a></li></ul></li>
+      <li><a href="noticias.html">Noticias</a></li>
       <li><a href="contacto.html">Contacto</a></li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
   </div>
   <div class="mobile-menu" id="mobileMenu">
-    <a href="index.html">🏠 Inicio</a><a href="institucion.html">🏛️ Nuestra Institución</a><a href="inicial.html">🌱 Nivel Inicial</a><a href="primaria.html">📚 Nivel Primaria</a><a href="secundaria.html">🎓 Nivel Secundaria</a><a href="contacto.html">✉️ Contacto</a><a href="https://www.facebook.com/IE7034NERINI.OFICIAL/?locale=es_LA" target="_blank">📘 Facebook</a>
+    <a href="index.html">🏠 Inicio</a>
+    <a href="institucion.html">🏛️ Nuestra Institución</a>
+    <a href="inicial.html">🌱 Nivel Inicial</a>
+    <a href="primaria.html">📚 Nivel Primaria</a>
+    <a href="secundaria.html">🎓 Nivel Secundaria</a>
+    <a href="noticias.html">📰 Noticias</a>
+    <a href="contacto.html">✉️ Contacto</a>
+    <a href="https://www.facebook.com/IE7034NERINI.OFICIAL/?locale=es_LA" target="_blank">📘 Facebook</a>
   </div>
 </nav>
 
+<!-- HERO -->
 <div class="page-hero">
   <div class="page-hero-inner fade-up">
     <span class="tag-label">Nuestra Institución</span>
@@ -128,7 +166,7 @@
       <div class="nerini-portrait fade-up">
         <div class="nerini-portrait-inner">
           <div class="portrait-circle">
-            <img src="imagenes/busto.jpeg" alt="Enrique Nerini">
+            <img src="imagenes/busto.jpeg" alt="Enrique Nerini" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none';this.parentElement.innerHTML='🎓';">
           </div>
           <h3>Enrique Nerini Collazos</h3>
           <div class="years">1897 — 1976</div>
@@ -147,33 +185,12 @@
         <p>Enrique Nerini Collazos (1897–1976) fue uno de los educadores más destacados del Perú del siglo XX. Nacido en Lima en el mes de mayo, dedicó toda su vida a la formación de jóvenes y al fortalecimiento de la educación peruana, dejando una huella imborrable en generaciones de estudiantes.</p>
         <p>Se graduó como <strong>Doctor en Letras</strong> de la Universidad Nacional Mayor de San Marcos, la más antigua universidad del continente americano, y desde temprana edad se dedicó a la docencia con una vocación que trascendió las aulas.</p>
         <p>Su visión educativa era integral: creía firmemente que la formación debía abarcar el <strong>desarrollo intelectual, moral y físico</strong> del estudiante, y que la escuela era el espacio donde se forjaba el carácter de los futuros ciudadanos.</p>
-
         <div class="timeline">
-          <div class="tl-item">
-            <div class="tl-year">1897</div>
-            <h4>Nace en Lima</h4>
-            <p>El 24 de mayo nace Enrique Nerini Collazos en la capital peruana.</p>
-          </div>
-          <div class="tl-item">
-            <div class="tl-year">Inicio s. XX</div>
-            <h4>Estudios en San Marcos</h4>
-            <p>Se gradúa como Doctor en Letras en la UNMSM, formándose en la más alta tradición académica peruana.</p>
-          </div>
-          <div class="tl-item">
-            <div class="tl-year">1943</div>
-            <h4>Funda el Colegio Guadalupe</h4>
-            <p>Fundó el Colegio Nacional "Nuestra Señora de Guadalupe", que se convertiría en una de las instituciones educativas más emblemáticas del país.</p>
-          </div>
-          <div class="tl-item">
-            <div class="tl-year">Reconocimiento</div>
-            <h4>Orden del Sol del Perú</h4>
-            <p>Recibe la condecoración en el grado de Gran Oficial, el más alto reconocimiento del Estado peruano a su labor educativa.</p>
-          </div>
-          <div class="tl-item">
-            <div class="tl-year">1976</div>
-            <h4>Fallecimiento</h4>
-            <p>El 14 de julio fallece en Lima, dejando un legado imborrable en la educación peruana que continúa inspirando hasta hoy.</p>
-          </div>
+          <div class="tl-item"><div class="tl-year">1897</div><h4>Nace en Lima</h4><p>El 24 de mayo nace Enrique Nerini Collazos en la capital peruana.</p></div>
+          <div class="tl-item"><div class="tl-year">Inicio s. XX</div><h4>Estudios en San Marcos</h4><p>Se gradúa como Doctor en Letras en la UNMSM, formándose en la más alta tradición académica peruana.</p></div>
+          <div class="tl-item"><div class="tl-year">1943</div><h4>Funda el Colegio Guadalupe</h4><p>Fundó el Colegio Nacional "Nuestra Señora de Guadalupe", que se convertiría en una de las instituciones educativas más emblemáticas del país.</p></div>
+          <div class="tl-item"><div class="tl-year">Reconocimiento</div><h4>Orden del Sol del Perú</h4><p>Recibe la condecoración en el grado de Gran Oficial, el más alto reconocimiento del Estado peruano a su labor educativa.</p></div>
+          <div class="tl-item"><div class="tl-year">1976</div><h4>Fallecimiento</h4><p>El 14 de julio fallece en Lima, dejando un legado imborrable en la educación peruana que continúa inspirando hasta hoy.</p></div>
         </div>
       </div>
     </div>
@@ -187,21 +204,9 @@
     <h2 class="sec-title">Lo que <span>construyó</span> para el Perú</h2>
     <p class="sec-lead">Tres pilares que definen la trascendencia de su vida y obra en la educación peruana.</p>
     <div class="legado-grid">
-      <div class="legado-card fade-up">
-        <div class="lc-num">01</div>
-        <h4>Fundador del Colegio Guadalupe</h4>
-        <p>En 1943, fundó el Colegio Nacional "Nuestra Señora de Guadalupe" en Lima, que se convertiría en una de las instituciones educativas más emblemáticas e influyentes del país, formando a generaciones de líderes peruanos.</p>
-      </div>
-      <div class="legado-card fade-up-2">
-        <div class="lc-num">02</div>
-        <h4>Educación Integral</h4>
-        <p>Fue promotor de una educación que abarcaba el desarrollo intelectual, moral y físico del estudiante, reconociendo que la formación verdadera va mucho más allá de la transmisión de conocimientos.</p>
-      </div>
-      <div class="legado-card fade-up-3">
-        <div class="lc-num">03</div>
-        <h4>Innovación Pedagógica</h4>
-        <p>Impulsó la innovación pedagógica y la formación docente en un momento crucial para la educación peruana, sentando bases que siguen siendo relevantes en la pedagogía contemporánea.</p>
-      </div>
+      <div class="legado-card fade-up"><div class="lc-num">01</div><h4>Fundador del Colegio Guadalupe</h4><p>En 1943, fundó el Colegio Nacional "Nuestra Señora de Guadalupe" en Lima, que se convertiría en una de las instituciones educativas más emblemáticas e influyentes del país.</p></div>
+      <div class="legado-card fade-up-2"><div class="lc-num">02</div><h4>Educación Integral</h4><p>Fue promotor de una educación que abarcaba el desarrollo intelectual, moral y físico del estudiante, reconociendo que la formación verdadera va mucho más allá de los conocimientos.</p></div>
+      <div class="legado-card fade-up-3"><div class="lc-num">03</div><h4>Innovación Pedagógica</h4><p>Impulsó la innovación pedagógica y la formación docente en un momento crucial para la educación peruana, sentando bases que siguen siendo relevantes hoy.</p></div>
     </div>
   </div>
 </div>
@@ -213,7 +218,7 @@
     <h2 class="sec-title" style="color:var(--white);">Su <em style="font-style:normal;color:var(--gold);">presencia</em> en nuestro distrito</h2>
     <div class="chorrillos-grid">
       <div class="chorrillos-text fade-up">
-        <p>Chorrillos rinde homenaje permanente a Don Enrique Nerini Collazos a través de un <strong>busto y plazuela</strong> ubicados detrás del emblemático Monumento a Olaya, en el corazón del distrito. Este espacio es un punto de encuentro de la memoria histórica chorrillana y un recordatorio de que la educación es la base del progreso de los pueblos.</p>
+        <p>Chorrillos rinde homenaje permanente a Don Enrique Nerini Collazos a través de un <strong>busto y plazuela</strong> ubicados detrás del emblemático Monumento a Olaya, en el corazón del distrito. Este espacio es un punto de encuentro de la memoria histórica chorrillana.</p>
         <p>Nuestra institución, la <strong>IE N° 7034</strong>, lleva su nombre con orgullo. Es uno de los colegios más antiguos de Chorrillos, parte del tejido social y cultural del distrito, donde generaciones de familias han confiado la formación de sus hijos.</p>
         <p>Cada alumno que cruza las puertas de nuestra institución continúa vivo el legado de un hombre que creyó, por encima de todo, en el poder transformador de la <strong>educación con valores</strong>.</p>
       </div>
@@ -235,29 +240,139 @@
     <span class="tag-label">Identidad institucional</span>
     <h2 class="sec-title">Misión, <span>Visión</span> y Valores</h2>
     <div class="mvv-grid">
-      <div class="mvv-card misión fade-up">
-        <div class="mvv-icon">🎯</div>
-        <h3>Misión</h3>
-        <p>Brindar una educación integral y de calidad en los niveles Inicial, Primaria y Secundaria, formando estudiantes con sólidos valores, pensamiento crítico y herramientas para su desarrollo personal y profesional.</p>
+      <div class="mvv-card mision fade-up"><div class="mvv-icon">🎯</div><h3>Misión</h3><p>Brindar una educación integral y de calidad en los niveles Inicial, Primaria y Secundaria, formando estudiantes con sólidos valores, pensamiento crítico y herramientas para su desarrollo personal y profesional.</p></div>
+      <div class="mvv-card vision fade-up-2"><div class="mvv-icon">🔭</div><h3>Visión</h3><p>Ser referente educativo de Chorrillos y Lima Sur, reconocida por la excelencia académica, la inclusión y la formación de ciudadanos comprometidos con su comunidad y con el Perú.</p></div>
+      <div class="mvv-card valores fade-up-3"><div class="mvv-icon">⭐</div><h3>Valores</h3><p>Respeto · Responsabilidad · Honestidad · Solidaridad · Identidad nacional y chorrillana · Compromiso con la excelencia</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     EQUIPO DIRECTIVO
+     ══════════════════════════════════════ -->
+<div class="directivo-bg">
+  <div class="directivo-inner">
+    <span class="tag-label">Equipo directivo 2026</span>
+    <h2 class="sec-title">Quienes nos <span>lideran</span></h2>
+    <p class="sec-lead">Nuestro equipo directivo conduce la institución con vocación de servicio y compromiso educativo.</p>
+    <div class="directivo-grid">
+
+      <div class="directivo-card director fade-up">
+        <div class="portrait-circle">
+          <img src="imagenes/director.png" alt="👨‍🏫" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none';this.parentElement.innerHTML='🎓';">
+        </div>
+        <div class="directivo-role">Director</div>
+        <div class="directivo-name">Mg. Ronald Jesús<br>Orellana Zapata</div>
       </div>
-      <div class="mvv-card visión fade-up-2">
-        <div class="mvv-icon">🔭</div>
-        <h3>Visión</h3>
-        <p>Ser referente educativo de Chorrillos y Lima Sur, reconocida por la excelencia académica, la inclusión y la formación de ciudadanos comprometidos con su comunidad y con el Perú.</p>
+
+      <div class="directivo-card fade-up-2">
+        <div class="directivo-avatar">👩‍🏫</div>
+        <div class="directivo-role">Sub Directora — Nivel Inicial</div>
+        <div class="directivo-name">Lic. María Patricia<br>De la Torre Mercado</div>
       </div>
-      <div class="mvv-card valores fade-up-3">
-        <div class="mvv-icon">⭐</div>
-        <h3>Valores</h3>
-        <p>Respeto · Responsabilidad · Honestidad · Solidaridad · Identidad nacional y chorrillana · Compromiso con la excelencia</p>
+
+      <div class="directivo-card fade-up-3">
+        <div class="directivo-avatar">👩‍🏫</div>
+        <div class="directivo-role">Sub Directora — Nivel Primaria</div>
+        <div class="directivo-name">Mg. Nanci Plácida<br>Gallo Yupayccama</div>
+      </div>
+
+      <div class="directivo-card fade-up-4">
+        <div class="directivo-avatar">👩‍🏫</div>
+        <div class="directivo-role">Coordinadora — Nivel Secundaria</div>
+        <div class="directivo-name">Lic. Arlene<br>Benites Vigil</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PLANA DOCENTE CON TABS
+     ══════════════════════════════════════ -->
+<div class="docente-bg">
+  <div class="docente-inner">
+    <span class="tag-label">Plana docente 2026</span>
+    <h2 class="sec-title">Nuestros <span>docentes</span></h2>
+    <p class="sec-lead">Profesionales comprometidos con la formación integral de nuestros estudiantes en cada nivel.</p>
+
+    <div class="docente-tabs">
+      <button class="tab-btn active" onclick="showTab('inicial')">🌱 Inicial</button>
+      <button class="tab-btn" onclick="showTab('primaria')">📚 Primaria</button>
+      <button class="tab-btn" onclick="showTab('secundaria')">🎓 Secundaria</button>
+    </div>
+
+    <!-- INICIAL -->
+    <div class="tab-panel active" id="tab-inicial">
+      <div class="docente-grid">
+        <div class="docente-card"><div class="docente-initial">A</div><div><p>Abanto Quispe</p><span>Ivy</span></div></div>
+        <div class="docente-card"><div class="docente-initial">C</div><div><p>Chancahuaña Cueva</p><span>Ana Estefa</span></div></div>
+        <div class="docente-card"><div class="docente-initial">B</div><div><p>Benvenutto Magallanes</p><span>Sara Jacoba</span></div></div>
+        <div class="docente-card"><div class="docente-initial">T</div><div><p>Tamayo Ñuñuri</p><span>Lourdes Noemí</span></div></div>
+        <div class="docente-card"><div class="docente-initial">F</div><div><p>Felix Garcia</p><span>Milagros Natividad</span></div></div>
+        <div class="docente-card"><div class="docente-initial">G</div><div><p>Galarreta Villón</p><span>Mónica Angélica</span></div></div>
+        <div class="docente-card"><div class="docente-initial">C</div><div><p>Chávez Flores</p><span>Alcida</span></div></div>
+        <div class="docente-card"><div class="docente-initial">R</div><div><p>Rivera Rodríguez</p><span>Ethel Augusta</span></div></div>
+      </div>
+    </div>
+
+    <!-- PRIMARIA -->
+    <div class="tab-panel" id="tab-primaria">
+      <div class="docente-grid">
+        <div class="docente-card"><div class="docente-initial">H</div><div><p>Herrera Ortiz</p><span>Cynthia</span></div></div>
+        <div class="docente-card"><div class="docente-initial">B</div><div><p>Barrios Vílchez</p><span>Rebeca Ana</span></div></div>
+        <div class="docente-card"><div class="docente-initial">T</div><div><p>Tapia Reyes</p><span>Giovanna Silvia</span></div></div>
+        <div class="docente-card"><div class="docente-initial">C</div><div><p>Checca Rezza</p><span>Raquel Nathaly</span></div></div>
+        <div class="docente-card"><div class="docente-initial">H</div><div><p>Hidalgo Mirabal</p><span>Beatriz Bibiana</span></div></div>
+        <div class="docente-card"><div class="docente-initial">R</div><div><p>Rojas Cahuata</p><span>Patricia</span></div></div>
+        <div class="docente-card"><div class="docente-initial">M</div><div><p>More Velásquez</p><span>Carlos Alfredo</span></div></div>
+        <div class="docente-card"><div class="docente-initial">E</div><div><p>Espinoza Alvarado</p><span>Hilda</span></div></div>
+        <div class="docente-card"><div class="docente-initial">F</div><div><p>Fuentes Rueda</p><span>Patricia Nieves</span></div></div>
+        <div class="docente-card"><div class="docente-initial">F</div><div><p>Fuentes Casquino</p><span>Ruti Frida</span></div></div>
+        <div class="docente-card"><div class="docente-initial">P</div><div><p>Pérez Baldeón</p><span>Doris Patricia</span></div></div>
+        <div class="docente-card"><div class="docente-initial">C</div><div><p>Coronel Flores</p><span>Amalia</span></div></div>
+        <div class="docente-card"><div class="docente-initial">B</div><div><p>Boy Hernández</p><span>Jenny Maribel</span></div></div>
+        <div class="docente-card"><div class="docente-initial">C</div><div><p>Castillo Rojas</p><span>Carmen Modesta</span></div></div>
+        <div class="docente-card"><div class="docente-initial">T</div><div><p>Trujillo Sánchez</p><span>Humberto Hugo</span></div></div>
+        <div class="docente-card"><div class="docente-initial">R</div><div><p>Retuerto Fernández</p><span>Regina Gabriela</span></div></div>
+        <div class="docente-card"><div class="docente-initial">M</div><div><p>Mendoza Hernández</p><span>Félix Ricardo</span></div></div>
+      </div>
+    </div>
+
+    <!-- SECUNDARIA -->
+    <div class="tab-panel" id="tab-secundaria">
+      <div class="docente-grid">
+        <div class="docente-card"><div class="docente-initial">R</div><div><p>Rodríguez Taminez</p><span>Emma Elisa</span></div></div>
+        <div class="docente-card"><div class="docente-initial">E</div><div><p>Espino Vivanco</p><span>Felicitas</span></div></div>
+        <div class="docente-card"><div class="docente-initial">C</div><div><p>Cangalaya Guerra</p><span>Celia</span></div></div>
+        <div class="docente-card"><div class="docente-initial">C</div><div><p>Carrasco Ortiz</p><span>María Amelia</span></div></div>
+        <div class="docente-card"><div class="docente-initial">V</div><div><p>Vega Porras</p><span>Alberto Aníbal</span></div></div>
+        <div class="docente-card"><div class="docente-initial">H</div><div><p>Huaringa Medrano</p><span>Eliana Miriam</span></div></div>
+        <div class="docente-card"><div class="docente-initial">R</div><div><p>Rosas Ordóñez</p><span>Colette Noelia</span></div></div>
+        <div class="docente-card"><div class="docente-initial">D</div><div><p>De la Cruz Calderón</p><span>Ana Bertha</span></div></div>
+        <div class="docente-card"><div class="docente-initial">T</div><div><p>Tuesta Gallegos</p><span>Israel</span></div></div>
+        <div class="docente-card"><div class="docente-initial">G</div><div><p>Guzmán Cartagena</p><span>Jessica Andrea</span></div></div>
+        <div class="docente-card"><div class="docente-initial">A</div><div><p>Ayuni Prado</p><span>Ronald Alberto</span></div></div>
+        <div class="docente-card"><div class="docente-initial">F</div><div><p>Fernández Rejas</p><span>Fernando Román</span></div></div>
+        <div class="docente-card"><div class="docente-initial">G</div><div><p>Guzmán León</p><span>Fortunato</span></div></div>
+        <div class="docente-card"><div class="docente-initial">B</div><div><p>Barrios Sarachaga</p><span>Sandro Favio</span></div></div>
+        <div class="docente-card"><div class="docente-initial">Q</div><div><p>Quispe Achata</p><span>Rufina Teofila</span></div></div>
+        <div class="docente-card"><div class="docente-initial">C</div><div><p>Casusol Lozano</p><span>Edith Teresa</span></div></div>
+        <div class="docente-card"><div class="docente-initial">L</div><div><p>López Nizama</p><span>Carmen Rosa</span></div></div>
+        <div class="docente-card"><div class="docente-initial">H</div><div><p>Herencia Olivas</p><span>Patricia Giovanna</span></div></div>
+        <div class="docente-card"><div class="docente-initial">R</div><div><p>Rosas Alarcón</p><span>Antonia Luisa</span></div></div>
+        <div class="docente-card"><div class="docente-initial">R</div><div><p>Ripa Hurtado</p><span>Teófilo</span></div></div>
       </div>
     </div>
   </div>
 </div>
 
+<!-- FOOTER -->
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
       <div style="margin-bottom:.6rem;"><span style="font-family:var(--font-head);font-size:1rem;color:var(--gold);font-weight:900;letter-spacing:.08em;">IE 7034</span><br><span style="font-size:1.1rem;color:var(--white);font-weight:700;">Enrique Nerini Collazos</span></div>
+      <p>Ca. Julio Calero cdra. 3, Urb. Barrio Chorrillos<br>Lima, Perú</p>
       <p style="margin-top:.8rem;">Uno de los colegios más antiguos y queridos de Chorrillos.</p>
     </div>
     <div class="footer-col">
@@ -267,36 +382,36 @@
       <a href="inicial.html">Nivel Inicial</a>
       <a href="primaria.html">Nivel Primaria</a>
       <a href="secundaria.html">Nivel Secundaria</a>
+      <a href="noticias.html">Noticias</a>
       <a href="contacto.html">Contacto</a>
     </div>
     <div class="footer-col">
       <h4>Síguenos</h4>
-      <a href="https://www.facebook.com/IE7034NERINI.OFICIAL/?locale=es_LA" 
-        target="_blank" 
-        style="color:#F4F8FC; font-weight:600; display:flex; align-items:center; gap:6px; text-decoration:none;">
-
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="#F4F8FC" xmlns="http://www.w3.org/2000/svg">
-          <path d="M22 12.07C22 6.48 17.52 2 11.93 2C6.48 2 2 6.48 2 12.07C2 17.06 5.66 21.18 10.44 22V14.89H7.9V12.07H10.44V9.93C10.44 7.41 11.93 6.03 14.22 6.03C15.3 6.03 16.44 6.21 16.44 6.21V8.7H15.19C13.96 8.7 13.56 9.47 13.56 10.26V12.07H16.33L15.89 14.89H13.56V22C18.34 21.18 22 17.06 22 12.07Z"/>
-        </svg>
+      <a href="https://www.facebook.com/IE7034NERINI.OFICIAL/?locale=es_LA" target="_blank" style="color:#F4F8FC;font-weight:600;display:flex;align-items:center;gap:6px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#F4F8FC"><path d="M22 12.07C22 6.48 17.52 2 11.93 2C6.48 2 2 6.48 2 12.07C2 17.06 5.66 21.18 10.44 22V14.89H7.9V12.07H10.44V9.93C10.44 7.41 11.93 6.03 14.22 6.03C15.3 6.03 16.44 6.21 16.44 6.21V8.7H15.19C13.96 8.7 13.56 9.47 13.56 10.26V12.07H16.33L15.89 14.89H13.56V22C18.34 21.18 22 17.06 22 12.07Z"/></svg>
+        Facebook Oficial
       </a>
-    <div style="margin-top:1.5rem;"><h4 style="margin-bottom:.6rem;">Dirección</h4><p style="font-size:.84rem;line-height:1.7;color:rgba(255,255,255,.55);">Ca. Julio Calero cdra. 3<br>Urb. Barrio Chorrillos<br>Lima, Perú</p></div>
+      <div style="margin-top:1.5rem;"><h4 style="margin-bottom:.6rem;">Dirección</h4><p style="font-size:.84rem;line-height:1.7;color:rgba(255,255,255,.55);">Ca. Julio Calero cdra. 3<br>Urb. Barrio Chorrillos<br>Lima, Perú</p></div>
     </div>
   </div>
   <div class="footer-bottom">
     <span>© 2026 Todos los derechos reservados.</span>
-    <a href="https://www.facebook.com/IE7034NERINI.OFICIAL/?locale=es_LA" 
-      target="_blank" 
-      style="color:#F4F8FC; font-weight:600; display:flex; align-items:center; gap:6px; text-decoration:none;">
-
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="#F4F8FC" xmlns="http://www.w3.org/2000/svg">
-        <path d="M22 12.07C22 6.48 17.52 2 11.93 2C6.48 2 2 6.48 2 12.07C2 17.06 5.66 21.18 10.44 22V14.89H7.9V12.07H10.44V9.93C10.44 7.41 11.93 6.03 14.22 6.03C15.3 6.03 16.44 6.21 16.44 6.21V8.7H15.19C13.96 8.7 13.56 9.47 13.56 10.26V12.07H16.33L15.89 14.89H13.56V22C18.34 21.18 22 17.06 22 12.07Z"/>
-      </svg>
+    <a href="https://www.facebook.com/IE7034NERINI.OFICIAL/?locale=es_LA" target="_blank" style="color:#F4F8FC;font-weight:600;display:flex;align-items:center;gap:6px;">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="#F4F8FC"><path d="M22 12.07C22 6.48 17.52 2 11.93 2C6.48 2 2 6.48 2 12.07C2 17.06 5.66 21.18 10.44 22V14.89H7.9V12.07H10.44V9.93C10.44 7.41 11.93 6.03 14.22 6.03C15.3 6.03 16.44 6.21 16.44 6.21V8.7H15.19C13.96 8.7 13.56 9.47 13.56 10.26V12.07H16.33L15.89 14.89H13.56V22C18.34 21.18 22 17.06 22 12.07Z"/></svg>
       Facebook Oficial
-    </a>  
-</div>
+    </a>
+  </div>
 </footer>
 
 </div>
 <script src="shared.js"></script>
+<script>
+function showTab(nivel) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + nivel).classList.add('active');
+  event.currentTarget.classList.add('active');
+}
+</script>
 </body>
 </html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Clases Virtuales — Elecciones 2026 | IE 7034 Enrique Nerini Collazos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<style>
+.article-hero{background:linear-gradient(155deg,#1a3a5c 0%,#0b1f3a 55%,#2d1b5c 100%);padding:calc(var(--nav-h) + 4rem) clamp(1.5rem,6vw,4rem) 5rem;position:relative;overflow:hidden;}
+.article-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 50% 60% at 80% 40%,rgba(59,139,196,.2) 0%,transparent 60%),radial-gradient(ellipse 40% 50% at 15% 75%,rgba(240,165,0,.12) 0%,transparent 55%);pointer-events:none;}
+.article-hero::after{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(-55deg,rgba(255,255,255,.02) 0px,rgba(255,255,255,.02) 1px,transparent 1px,transparent 40px);pointer-events:none;}
+.article-hero-inner{position:relative;z-index:1;max-width:780px;}
+.article-meta{display:flex;align-items:center;gap:12px;margin-bottom:1.5rem;flex-wrap:wrap;}
+.article-date{font-size:.78rem;font-weight:700;color:rgba(255,255,255,.7);letter-spacing:.07em;text-transform:uppercase;}
+.article-badge{padding:5px 14px;border-radius:999px;font-size:.72rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;}
+.badge-aviso{background:rgba(240,165,0,.25);border:1px solid rgba(240,165,0,.5);color:var(--gold);}
+.article-hero h1{font-family:var(--font-head);font-size:clamp(2rem,5vw,3.8rem);font-weight:900;color:var(--white);line-height:1.1;margin-bottom:1.2rem;}
+.article-hero h1 em{font-style:normal;color:var(--gold);}
+.article-hero .lead{font-size:1.1rem;color:rgba(255,255,255,.72);max-width:600px;line-height:1.75;}
+
+/* Article */
+.article-wrap{max-width:820px;margin:0 auto;padding:clamp(3rem,6vw,5rem) clamp(1.5rem,5vw,3rem);}
+.article-body p{font-size:1rem;color:#3a4a5c;line-height:1.85;margin-bottom:1.3rem;}
+.article-body strong{color:var(--navy);}
+.article-body h2{font-family:var(--font-head);font-size:1.5rem;font-weight:800;color:var(--navy);margin:2.5rem 0 1rem;}
+.article-body h3{font-family:var(--font-head);font-size:1.2rem;font-weight:700;color:var(--sky);margin:2rem 0 .7rem;}
+
+.info-box{border-radius:var(--radius);padding:1.8rem 2rem;margin:2rem 0;}
+.info-box.alert{background:linear-gradient(135deg,#fff3cd 0%,#fff9e6 100%);border-left:4px solid var(--gold);}
+.info-box.virtual{background:linear-gradient(135deg,var(--sky-pale) 0%,#e8f4fd 100%);border-left:4px solid var(--sky);}
+.info-box.civic{background:linear-gradient(135deg,#e8f5e9 0%,#f0faf0 100%);border-left:4px solid #388e3c;}
+.info-box.closed{background:linear-gradient(135deg,#fce4e4 0%,#fff0f0 100%);border-left:4px solid #e53935;}
+.info-box h4{font-family:var(--font-head);font-size:1.05rem;font-weight:800;margin-bottom:.8rem;}
+.info-box.alert h4{color:#8a5c00;}
+.info-box.virtual h4{color:var(--sky);}
+.info-box.civic h4{color:#2e7d32;}
+.info-box.closed h4{color:#c62828;}
+.info-box p,.info-box li{font-size:.92rem;line-height:1.7;color:#3a4a5c;}
+.info-box ul{padding-left:1.3rem;}
+.info-box ul li{margin-bottom:.5rem;}
+
+/* Steps */
+.steps{margin:2rem 0;display:flex;flex-direction:column;gap:.8rem;}
+.step{display:flex;gap:1rem;align-items:flex-start;background:var(--paper);border-radius:var(--radius-sm);padding:1.2rem 1.5rem;border:1px solid var(--gray-light);}
+.step-num{width:34px;height:34px;border-radius:50%;background:var(--sky);color:var(--white);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.92rem;flex-shrink:0;font-family:var(--font-head);}
+.step-text h4{font-weight:700;color:var(--navy);font-size:.95rem;margin-bottom:.2rem;}
+.step-text p{font-size:.87rem;color:var(--gray);line-height:1.55;margin:0;}
+
+/* Pull quote */
+.pull-quote{border-left:4px solid var(--gold);padding:1.2rem 1.8rem;margin:2rem 0;background:rgba(240,165,0,.06);border-radius:0 var(--radius-sm) var(--radius-sm) 0;}
+.pull-quote p{font-family:var(--font-head);font-size:1.15rem;font-style:italic;color:var(--navy);margin:0 !important;line-height:1.6;}
+
+/* Firma */
+.firma{background:var(--paper);border-radius:var(--radius);padding:2rem 2.5rem;margin-top:3rem;border:1px solid var(--gray-light);}
+.firma p{font-size:.92rem;color:var(--gray);line-height:1.7;}
+.firma strong{color:var(--navy);font-size:1rem;}
+.firma .firma-cargo{font-size:.82rem;color:var(--sky);font-weight:600;letter-spacing:.04em;text-transform:uppercase;}
+.back-link{display:inline-flex;align-items:center;gap:7px;color:var(--sky);font-weight:600;font-size:.9rem;margin-bottom:2rem;transition:gap .2s;}
+.back-link:hover{gap:3px;}
+</style>
+</head>
+<body>
+<div class="page-wrap">
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <div class="brand-icon">
+        <img src="imagenes/logo.png" alt="IE 7034" style="width:100%;height:100%;object-fit:cover;border-radius:10px;" onerror="this.style.display='none';this.parentElement.innerHTML='<svg viewBox=\'0 0 40 40\' fill=\'none\'><path d=\'M20 5L5 13V27L20 35L35 27V13L20 5Z\' stroke=\'white\' stroke-width=\'1.8\' fill=\'rgba(255,255,255,0.1)\'/><text x=\'13.5\' y=\'25.5\' font-size=\'14\' font-weight=\'900\' fill=\'white\' font-family=\'Georgia,serif\'>N</text></svg>';">
+      </div>
+      <div class="brand-text"><span class="brand-num">IE 7034</span><span class="brand-name">Enrique Nerini Collazos</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="institucion.html">Nuestra Institución</a></li>
+      <li class="has-drop"><a href="#">Niveles ▾</a><ul class="dropdown"><li><a href="inicial.html">Nivel Inicial</a></li><li><a href="primaria.html">Nivel Primaria</a></li><li><a href="secundaria.html">Nivel Secundaria</a></li></ul></li>
+      <li><a href="noticias.html">Noticias</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">🏠 Inicio</a><a href="institucion.html">🏛️ Nuestra Institución</a><a href="inicial.html">🌱 Nivel Inicial</a><a href="primaria.html">📚 Nivel Primaria</a><a href="secundaria.html">🎓 Nivel Secundaria</a><a href="noticias.html">📰 Noticias</a><a href="contacto.html">✉️ Contacto</a><a href="https://www.facebook.com/IE7034NERINI.OFICIAL/?locale=es_LA" target="_blank">📘 Facebook</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="article-hero">
+  <div class="article-hero-inner fade-up">
+    <div class="article-meta">
+      <span class="article-date">10 de abril de 2026</span>
+      <span class="article-badge badge-aviso">Aviso importante</span>
+    </div>
+    <h1>Clases virtuales el lunes 13 de abril por <em>Elecciones 2026</em></h1>
+    <p class="lead">El domingo 12 de abril se realizan las Elecciones Presidenciales. El lunes 13, el local escolar permanecerá cerrado y las clases se dictarán de forma virtual vía Google Meet.</p>
+  </div>
+</div>
+
+<!-- ARTICLE BODY -->
+<div class="article-wrap">
+  <a href="noticias.html" class="back-link">← Volver a Noticias</a>
+
+  <div class="article-body">
+
+    <div class="info-box alert">
+      <h4>📢 Resumen del comunicado</h4>
+      <ul>
+        <li><strong>Domingo 12 de abril:</strong> Elecciones Presidenciales 2026 — el local se usa como centro de votación.</li>
+        <li><strong>Lunes 13 de abril:</strong> Local escolar cerrado. Clases virtuales por Google Meet.</li>
+        <li><strong>Martes 14 de abril:</strong>  retorno a clases presenciales con normalidad.</li>
+      </ul>
+    </div>
+
+    <p>Estimada comunidad educativa de la <strong>IE N° 7034 Enrique Nerini Collazos</strong>:</p>
+
+    <p>Les comunicamos que el <strong>domingo 12 de abril de 2026</strong> se llevarán a cabo las <strong>Elecciones Presidenciales y del Congreso de la República del Perú 2026</strong>. En ese marco, nuestro local escolar ha sido designado como <strong>centro de votación</strong>, por lo que las instalaciones estarán en uso durante el fin de semana electoral.</p>
+
+    <p>En consecuencia, y en cumplimiento de las disposiciones del MINEDU y de las autoridades electorales, el <strong>lunes 13 de abril de 2026</strong> el local escolar permanecerá <strong>cerrado</strong> para garantizar el orden y la logística del proceso democrático.</p>
+
+    <div class="info-box closed">
+      <h4>🔒 Lunes 13 de abril — Local cerrado</h4>
+      <p>El local de la IE 7034 no atenderá presencialmente el día lunes 13 de abril de 2026. Pedimos a estudiantes y familias no acudir a las instalaciones ese día.</p>
+    </div>
+
+    <h2>¿Cómo serán las clases el lunes 13?</h2>
+    <p>Para garantizar la continuidad del aprendizaje, las clases del lunes 13 de abril se realizarán de manera <strong>completamente virtual</strong> a través de <strong>Google Meet</strong>. No habrá suspensión de actividades académicas.</p>
+
+    <div class="info-box virtual">
+      <h4>💻 Clases virtuales por Google Meet</h4>
+      <ul>
+        <li>Cada docente enviará el <strong>enlace de Google Meet</strong> de su clase a través del <strong>grupo de WhatsApp de la sección</strong>.</li>
+        <li>Los estudiantes deben estar conectados <strong>a la hora habitual</strong> de inicio de cada clase.</li>
+        <li>Se recomienda conectarse desde un lugar tranquilo, con buena conexión a internet.</li>
+        <li>Las clases virtuales tienen la misma importancia que las presenciales: la asistencia y participación serán registradas.</li>
+      </ul>
+    </div>
+
+    <h2>Pasos para el lunes 13 de abril</h2>
+    <div class="steps">
+      <div class="step"><div class="step-num">1</div><div class="step-text"><h4>Revisa tu grupo de WhatsApp</h4><p>Cada docente publicará los enlaces de Meet y el horario del lunes en el grupo de WhatsApp de tu sección.</p></div></div>
+      <div class="step"><div class="step-num">2</div><div class="step-text"><h4>Prepara tu espacio virtual</h4><p>Conéctate desde un lugar cómodo, con tu cuaderno, útiles y cámara lista. Vístete apropiadamente.</p></div></div>
+      <div class="step"><div class="step-num">3</div><div class="step-text"><h4>Ingresa al Meet a tiempo</h4><p>Conéctate al link de Google Meet que tu profesor compartió, con al menos 5 minutos de anticipación.</p></div></div>
+      <div class="step"><div class="step-num">4</div><div class="step-text"><h4>Participa activamente</h4><p>La clase virtual es una clase real. Atiende, toma apuntes, levanta la mano virtual y participa.</p></div></div>
+    </div>
+
+    <div class="pull-quote">
+      <p>"La democracia también se aprende. Ser responsable el lunes, conectarte a tiempo y participar en clase es ya un ejercicio de ciudadanía."</p>
+    </div>
+
+    <h2>Un mensaje para nuestros estudiantes 🎓</h2>
+    <p>Sabemos que las clases virtuales pueden sentirse distintas, pero queremos animarlos a <strong>verlas como una oportunidad</strong>. Demuestren que la comunidad Nerini no necesita paredes para aprender. La constancia y la responsabilidad no tienen modo presencial ni virtual — son parte de quiénes son.</p>
+    <p>¡Los esperamos conectados, puntuales y con toda la energía del inicio del año! Este lunes virtual también cuenta. <strong>¡Sí se puede!</strong> 💪</p>
+
+    <div class="info-box civic">
+      <h4>🗳️ Sobre las Elecciones 2026</h4>
+      <p>Las Elecciones Presidenciales y del Congreso de la República son un acto cívico fundamental en la vida democrática del Perú. Desde la IE 7034 invitamos a los mayores de 18 años a ejercer su derecho al voto responsablemente el domingo 12 de abril.</p>
+    </div>
+
+    <h2>Vuelta a clases presenciales</h2>
+    <p>El <strong>martes 14 de abril de 2026</strong> se retoman las clases presenciales con total normalidad. Les pedimos preparar sus materiales con anticipación el fin de semana.</p>
+    <p>Ante cualquier consulta sobre la jornada virtual, los docentes estarán disponibles a través de los grupos de WhatsApp.</p>
+
+  </div>
+
+  <div class="firma">
+    <p style="margin-bottom:1.2rem;">Atentamente,</p>
+    <p><strong>Mg. Ronald Jesús Orellana Zapata</strong></p>
+    <p class="firma-cargo">Director — IE N° 7034 Enrique Nerini Collazos</p>
+  </div>
+
+  <div style="margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--gray-light);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;">
+    <a href="noticias.html" class="back-link" style="margin:0;">← Volver a Noticias</a>
+    <a href="noticia-inicio-clases.html" style="font-size:.88rem;font-weight:600;color:var(--sky);">← Noticia anterior</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand"><div style="margin-bottom:.6rem;"><span style="font-family:var(--font-head);font-size:1rem;color:var(--gold);font-weight:900;letter-spacing:.08em;">IE 7034</span><br><span style="font-size:1.1rem;color:var(--white);font-weight:700;">Enrique Nerini Collazos</span></div><p>Ca. Julio Calero cdra. 3, Urb. Barrio Chorrillos<br>Lima, Perú</p></div>
+    <div class="footer-col"><h4>Menú</h4><a href="index.html">Inicio</a><a href="institucion.html">Nuestra Institución</a><a href="noticias.html">Noticias</a><a href="contacto.html">Contacto</a></div>
+    <div class="footer-col"><h4>Síguenos</h4><a href="https://www.facebook.com/IE7034NERINI.OFICIAL/?locale=es_LA" target="_blank" style="color:#F4F8FC;font-weight:600;">📘 Facebook Oficial</a></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Todos los derechos reservados.</span><a href="https://www.facebook.com/IE7034NERINI.OFICIAL/?locale=es_LA" target="_blank" style="color:var(--sky-light);font-weight:600;">📘 Facebook Oficial</a></div>
+</footer>
+</div>
+<script src="shared.js"></script>
+</body>
+</html>

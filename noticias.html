@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Noticias — IE 7034 Enrique Nerini Collazos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<style>
+.page-hero{background:linear-gradient(155deg,var(--navy) 0%,#0e2d54 60%,var(--navy-light) 100%);padding:calc(var(--nav-h) + 4rem) clamp(1.5rem,6vw,4rem) 5rem;position:relative;overflow:hidden;}
+.page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 50% 70% at 80% 50%,rgba(59,139,196,.25) 0%,transparent 65%);pointer-events:none;}
+.page-hero::after{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(-55deg,rgba(255,255,255,.02) 0px,rgba(255,255,255,.02) 1px,transparent 1px,transparent 40px);pointer-events:none;}
+.page-hero-inner{position:relative;z-index:1;max-width:700px;}
+.page-hero h1{font-family:var(--font-head);font-size:clamp(2.2rem,5vw,4rem);font-weight:900;color:var(--white);line-height:1.08;margin-bottom:1.2rem;}
+.page-hero h1 span{color:var(--gold);}
+.page-hero p{font-size:1.1rem;color:rgba(255,255,255,.65);max-width:540px;line-height:1.75;}
+
+/* News grid */
+.news-section{padding:clamp(3.5rem,6vw,5.5rem) clamp(1.5rem,5vw,3rem);max-width:1100px;margin:0 auto;}
+.news-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(480px,1fr));gap:2rem;margin-top:3rem;}
+.news-card{background:var(--white);border-radius:var(--radius);overflow:hidden;border:1px solid var(--gray-light);transition:transform .25s var(--ease),box-shadow .25s;display:flex;flex-direction:column;}
+.news-card:hover{transform:translateY(-5px);box-shadow:0 16px 40px rgba(11,31,58,.12);}
+.news-card-banner{height:180px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;}
+.news-card-banner.inicio{background:linear-gradient(135deg,var(--sky) 0%,var(--navy-light) 100%);}
+.news-card-banner.elecciones{background:linear-gradient(135deg,#1a3a5c 0%,#2d1b5c 100%);}
+.banner-icon{font-size:4rem;position:relative;z-index:1;}
+.banner-pattern{position:absolute;inset:0;background-image:repeating-linear-gradient(-45deg,rgba(255,255,255,.04) 0,rgba(255,255,255,.04) 1px,transparent 1px,transparent 20px);}
+.news-card-body{padding:1.8rem 2rem;flex:1;display:flex;flex-direction:column;}
+.news-meta{display:flex;align-items:center;gap:10px;margin-bottom:1rem;flex-wrap:wrap;}
+.news-date{font-size:.75rem;font-weight:700;color:var(--gray);letter-spacing:.06em;text-transform:uppercase;}
+.news-badge{padding:4px 12px;border-radius:999px;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;}
+.badge-comunicado{background:var(--sky-pale);color:var(--sky);}
+.badge-aviso{background:#fff3d4;color:#9a6600;}
+.news-card h2{font-family:var(--font-head);font-size:1.35rem;font-weight:800;color:var(--navy);margin-bottom:.8rem;line-height:1.25;}
+.news-card p{font-size:.92rem;color:var(--gray);line-height:1.7;margin-bottom:1.5rem;flex:1;}
+.news-read-link{display:inline-flex;align-items:center;gap:7px;font-size:.88rem;font-weight:700;color:var(--sky);transition:gap .2s;}
+.news-read-link:hover{gap:11px;color:var(--navy);}
+
+@media(max-width:600px){.news-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<div class="page-wrap">
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <div class="brand-icon">
+        <img src="imagenes/logo.png" alt="IE 7034" style="width:100%;height:100%;object-fit:cover;border-radius:10px;" onerror="this.style.display='none';this.parentElement.innerHTML='<svg viewBox=\'0 0 40 40\' fill=\'none\'><path d=\'M20 5L5 13V27L20 35L35 27V13L20 5Z\' stroke=\'white\' stroke-width=\'1.8\' fill=\'rgba(255,255,255,0.1)\'/><text x=\'13.5\' y=\'25.5\' font-size=\'14\' font-weight=\'900\' fill=\'white\' font-family=\'Georgia,serif\'>N</text></svg>';">
+      </div>
+      <div class="brand-text"><span class="brand-num">IE 7034</span><span class="brand-name">Enrique Nerini Collazos</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="institucion.html">Nuestra Institución</a></li>
+      <li class="has-drop"><a href="#">Niveles ▾</a><ul class="dropdown"><li><a href="inicial.html">Nivel Inicial</a></li><li><a href="primaria.html">Nivel Primaria</a></li><li><a href="secundaria.html">Nivel Secundaria</a></li></ul></li>
+      <li><a href="noticias.html" class="current">Noticias</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">🏠 Inicio</a><a href="institucion.html">🏛️ Nuestra Institución</a><a href="inicial.html">🌱 Nivel Inicial</a><a href="primaria.html">📚 Nivel Primaria</a><a href="secundaria.html">🎓 Nivel Secundaria</a><a href="noticias.html">📰 Noticias</a><a href="contacto.html">✉️ Contacto</a><a href="https://www.facebook.com/IE7034NERINI.OFICIAL/?locale=es_LA" target="_blank">📘 Facebook</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-inner fade-up">
+    <span class="tag-label">Comunicados y noticias</span>
+    <h1>Mantente <span>informado</span></h1>
+    <p>Aquí encontrarás los comunicados oficiales, avisos importantes y novedades de la comunidad educativa Nerini.</p>
+  </div>
+</div>
+
+<div class="news-section">
+  <span class="tag-label">Publicaciones recientes</span>
+  <h2 class="sec-title">Últimas <span>noticias</span></h2>
+
+  <div class="news-grid">
+
+    <!-- Noticia 1 — más reciente primero -->
+    <div class="news-card fade-up-2">
+      <div class="news-card-banner elecciones">
+        <div class="banner-pattern"></div>
+        <div class="banner-icon">🗳️</div>
+      </div>
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span class="news-date">10 de abril de 2026</span>
+          <span class="news-badge badge-aviso">Aviso importante</span>
+        </div>
+        <h2>Clases virtuales el lunes 13 de abril por Elecciones Presidenciales 2026</h2>
+        <p>El sábado 12 de abril se llevarán a cabo las Elecciones Presidenciales 2026. En consecuencia, el lunes 13 de abril el local escolar permanecerá cerrado. Las clases se desarrollarán de manera virtual a través de Google Meet. Los docentes se comunicarán con sus alumnos por los grupos de WhatsApp de cada sección.</p>
+        <a href="noticia-elecciones.html" class="news-read-link">Leer comunicado completo →</a>
+      </div>
+    </div>
+
+    <!-- Noticia 2 -->
+    <div class="news-card fade-up">
+      <div class="news-card-banner inicio">
+        <div class="banner-pattern"></div>
+        <div class="banner-icon">🏫</div>
+      </div>
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span class="news-date">3 de marzo de 2026</span>
+          <span class="news-badge badge-comunicado">Comunicado</span>
+        </div>
+        <h2>¡Bienvenidos al Año Escolar 2026! Inicio de clases el 10 de marzo</h2>
+        <p>Con mucha alegría, la IE 7034 Enrique Nerini Collazos da la bienvenida a toda la comunidad educativa al nuevo año escolar. El inicio de clases presenciales será el martes 10 de marzo de 2026. Agradecemos la puntualidad de todos nuestros estudiantes y familias.</p>
+        <a href="noticia-inicio-clases.html" class="news-read-link">Leer comunicado completo →</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand"><div style="margin-bottom:.6rem;"><span style="font-family:var(--font-head);font-size:1rem;color:var(--gold);font-weight:900;letter-spacing:.08em;">IE 7034</span><br><span style="font-size:1.1rem;color:var(--white);font-weight:700;">Enrique Nerini Collazos</span></div><p>Ca. Julio Calero cdra. 3, Urb. Barrio Chorrillos<br>Lima, Perú</p></div>
+    <div class="footer-col"><h4>Menú</h4><a href="index.html">Inicio</a><a href="institucion.html">Nuestra Institución</a><a href="inicial.html">Nivel Inicial</a><a href="primaria.html">Nivel Primaria</a><a href="secundaria.html">Nivel Secundaria</a><a href="noticias.html">Noticias</a><a href="contacto.html">Contacto</a></div>
+    <div class="footer-col"><h4>Síguenos</h4><a href="https://www.facebook.com/IE7034NERINI.OFICIAL/?locale=es_LA" target="_blank" style="color:#F4F8FC;font-weight:600;">📘 Facebook Oficial</a></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Todos los derechos reservados.</span><a href="https://www.facebook.com/IE7034NERINI.OFICIAL/?locale=es_LA" target="_blank" style="color:var(--sky-light);font-weight:600;">📘 Facebook Oficial</a></div>
+</footer>
+</div>
+<script src="shared.js"></script>
+</body>
+</html>

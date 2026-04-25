@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Inicio de Clases 2026 — IE 7034 Enrique Nerini Collazos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<style>
+.article-hero{background:linear-gradient(155deg,var(--sky) 0%,var(--navy-light) 60%,var(--navy) 100%);padding:calc(var(--nav-h) + 4rem) clamp(1.5rem,6vw,4rem) 5rem;position:relative;overflow:hidden;}
+.article-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 55% 65% at 85% 45%,rgba(255,255,255,.1) 0%,transparent 60%);pointer-events:none;}
+.article-hero::after{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(-55deg,rgba(255,255,255,.025) 0px,rgba(255,255,255,.025) 1px,transparent 1px,transparent 40px);pointer-events:none;}
+.article-hero-inner{position:relative;z-index:1;max-width:780px;}
+.article-meta{display:flex;align-items:center;gap:12px;margin-bottom:1.5rem;flex-wrap:wrap;}
+.article-date{font-size:.78rem;font-weight:700;color:rgba(255,255,255,.7);letter-spacing:.07em;text-transform:uppercase;}
+.article-badge{padding:5px 14px;border-radius:999px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.3);font-size:.72rem;font-weight:700;color:var(--white);letter-spacing:.07em;text-transform:uppercase;}
+.article-hero h1{font-family:var(--font-head);font-size:clamp(2rem,5vw,3.8rem);font-weight:900;color:var(--white);line-height:1.1;margin-bottom:1.2rem;}
+.article-hero .lead{font-size:1.1rem;color:rgba(255,255,255,.72);max-width:600px;line-height:1.75;}
+
+/* Article body */
+.article-wrap{max-width:820px;margin:0 auto;padding:clamp(3rem,6vw,5rem) clamp(1.5rem,5vw,3rem);}
+.article-body p{font-size:1rem;color:#3a4a5c;line-height:1.85;margin-bottom:1.3rem;}
+.article-body strong{color:var(--navy);}
+.article-body h2{font-family:var(--font-head);font-size:1.5rem;font-weight:800;color:var(--navy);margin:2.5rem 0 1rem;}
+.article-body h3{font-family:var(--font-head);font-size:1.2rem;font-weight:700;color:var(--sky);margin:2rem 0 .7rem;}
+
+/* Info boxes */
+.info-box{border-radius:var(--radius);padding:1.8rem 2rem;margin:2rem 0;}
+.info-box.welcome{background:linear-gradient(135deg,var(--sky-pale) 0%,#e8f4fd 100%);border-left:4px solid var(--sky);}
+.info-box.important{background:linear-gradient(135deg,#fff9e6 0%,#fff3cc 100%);border-left:4px solid var(--gold);}
+.info-box.green{background:linear-gradient(135deg,#e8f5e9 0%,#f0faf0 100%);border-left:4px solid #4caf50;}
+.info-box h4{font-family:var(--font-head);font-size:1.05rem;font-weight:800;margin-bottom:.8rem;}
+.info-box.welcome h4{color:var(--sky);}
+.info-box.important h4{color:#9a6600;}
+.info-box.green h4{color:#2e7d32;}
+.info-box p,.info-box li{font-size:.92rem;line-height:1.7;color:#3a4a5c;}
+.info-box ul{padding-left:1.3rem;}
+.info-box ul li{margin-bottom:.4rem;}
+
+/* Horario table */
+.horario-table{width:100%;border-collapse:collapse;margin:1.5rem 0;border-radius:var(--radius);overflow:hidden;box-shadow:0 2px 12px rgba(11,31,58,.08);}
+.horario-table th{background:var(--navy);color:var(--white);padding:12px 16px;font-size:.85rem;font-weight:700;text-align:left;letter-spacing:.04em;}
+.horario-table td{padding:11px 16px;font-size:.88rem;border-bottom:1px solid var(--gray-light);color:#3a4a5c;}
+.horario-table tr:last-child td{border-bottom:none;}
+.horario-table tr:nth-child(even) td{background:var(--paper);}
+
+/* Signature */
+.firma{background:var(--paper);border-radius:var(--radius);padding:2rem 2.5rem;margin-top:3rem;border:1px solid var(--gray-light);}
+.firma p{font-size:.92rem;color:var(--gray);line-height:1.7;}
+.firma strong{color:var(--navy);font-size:1rem;}
+.firma .firma-cargo{font-size:.82rem;color:var(--sky);font-weight:600;letter-spacing:.04em;text-transform:uppercase;}
+
+/* Back link */
+.back-link{display:inline-flex;align-items:center;gap:7px;color:var(--sky);font-weight:600;font-size:.9rem;margin-bottom:2rem;transition:gap .2s;}
+.back-link:hover{gap:3px;}
+
+/* Highlight quote */
+.pull-quote{border-left:4px solid var(--gold);padding:1.2rem 1.8rem;margin:2rem 0;background:rgba(240,165,0,.06);border-radius:0 var(--radius-sm) var(--radius-sm) 0;}
+.pull-quote p{font-family:var(--font-head);font-size:1.15rem;font-style:italic;color:var(--navy);margin:0 !important;line-height:1.6;}
+</style>
+</head>
+<body>
+<div class="page-wrap">
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <div class="brand-icon">
+        <img src="imagenes/logo.png" alt="IE 7034" style="width:100%;height:100%;object-fit:cover;border-radius:10px;" onerror="this.style.display='none';this.parentElement.innerHTML='<svg viewBox=\'0 0 40 40\' fill=\'none\'><path d=\'M20 5L5 13V27L20 35L35 27V13L20 5Z\' stroke=\'white\' stroke-width=\'1.8\' fill=\'rgba(255,255,255,0.1)\'/><text x=\'13.5\' y=\'25.5\' font-size=\'14\' font-weight=\'900\' fill=\'white\' font-family=\'Georgia,serif\'>N</text></svg>';">
+      </div>
+      <div class="brand-text"><span class="brand-num">IE 7034</span><span class="brand-name">Enrique Nerini Collazos</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="institucion.html">Nuestra Institución</a></li>
+      <li class="has-drop"><a href="#">Niveles ▾</a><ul class="dropdown"><li><a href="inicial.html">Nivel Inicial</a></li><li><a href="primaria.html">Nivel Primaria</a></li><li><a href="secundaria.html">Nivel Secundaria</a></li></ul></li>
+      <li><a href="noticias.html" class="current">Noticias</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">🏠 Inicio</a><a href="institucion.html">🏛️ Nuestra Institución</a><a href="inicial.html">🌱 Nivel Inicial</a><a href="primaria.html">📚 Nivel Primaria</a><a href="secundaria.html">🎓 Nivel Secundaria</a><a href="noticias.html">📰 Noticias</a><a href="contacto.html">✉️ Contacto</a><a href="https://www.facebook.com/IE7034NERINI.OFICIAL/?locale=es_LA" target="_blank">📘 Facebook</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="article-hero">
+  <div class="article-hero-inner fade-up">
+    <div class="article-meta">
+      <span class="article-date">3 de marzo de 2026</span>
+      <span class="article-badge">Comunicado Oficial</span>
+    </div>
+    <h1>¡Bienvenidos al Año Escolar 2026!</h1>
+    <p class="lead">Con mucha alegría, la IE 7034 Enrique Nerini Collazos abre sus puertas al nuevo año escolar. El inicio de clases presenciales será el martes 10 de marzo de 2026.</p>
+  </div>
+</div>
+
+<!-- ARTICLE BODY -->
+<div class="article-wrap">
+  <a href="noticias.html" class="back-link">← Volver a Noticias</a>
+
+  <div class="article-body">
+
+    <div class="info-box welcome">
+      <h4>🏫 Inicio de clases: lunes 16 de marzo de 2026</h4>
+      <p>El primer día de clases presenciales del Año Escolar 2026 será el <strong>lunes 16 de marzo</strong>. Pedimos a toda la comunidad educativa tomar nota de esta fecha y organizarse con anticipación.</p>
+    </div>
+
+    <p>Estimadas familias, estudiantes y docentes de la gran comunidad educativa de la <strong>Institución Educativa N° 7034 Enrique Nerini Collazos</strong>:</p>
+
+    <p>Es con genuina satisfacción que les damos la bienvenida al <strong>Año Escolar 2026</strong>. Un nuevo año es siempre una nueva oportunidad: de crecer, de aprender, de construir nuevas amistades y de superar los propios límites. Ese es el espíritu que nos anima en nuestra institución, y el legado que Don Enrique Nerini Collazos nos dejó como guía.</p>
+
+    <div class="pull-quote">
+      <p>"Cada año escolar es un nuevo capítulo. Escribámoslo juntos con esfuerzo, respeto y mucho entusiasmo."</p>
+    </div>
+
+    <h2>Fecha y horario de inicio</h2>
+    <p>El Año Escolar 2026 iniciará de manera presencial el día <strong>martes 10 de marzo de 2026</strong>. Los horarios de ingreso por nivel son los siguientes:</p>
+
+    <table class="horario-table">
+      <thead>
+        <tr><th>Nivel</th><th>Hora de ingreso</th><th>Hora de salida</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>🌱 Nivel Inicial</td><td>8:00 a. m.</td><td>1:00 p. m.</td></tr>
+        <tr><td>📚 Nivel Primaria</td><td>7:45 a. m.</td><td>1:15 p. m.</td></tr>
+        <tr><td>🎓 Nivel Secundaria</td><td>7:30 a. m.</td><td>1:30 p. m.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="info-box important">
+      <h4>⏰ Agradecemos puntualidad</h4>
+      <ul>
+        <li>Les pedimos encarecidamente llegar a tiempo el primer día. La puntualidad es un valor que construimos juntos.</li>
+        <li>Los estudiantes que lleguen tarde deberán ingresar por la puerta lateral e informar a la subdirección de su nivel.</li>
+        <li>El primer día de clases es especialmente importante para la ambientación y bienvenida de cada aula.</li>
+      </ul>
+    </div>
+
+    <h2>Lo que deben traer el primer día</h2>
+    <p>Para el primer día de clases, los estudiantes deben presentarse con su <strong>uniforme completo</strong> y los útiles básicos. La lista de útiles específica por grado será entregada durante la primera semana de clases.</p>
+
+    <div class="info-box green">
+      <h4>✅ Lista básica para el primer día</h4>
+      <ul>
+        <li>Uniforme completo y en buen estado (buzo y/o uniforme de diario)</li>
+        <li>Cuadernos y lapiceros para tomar apuntes</li>
+        <li>Lonchera o refrigerio</li>
+        <li>Documento de identidad (DNI) para estudiantes nuevos</li>
+        <li>Actitud positiva, ganas de aprender y mucha energía ✨</li>
+      </ul>
+    </div>
+
+    <h2>Mensaje para nuestros estudiantes</h2>
+    <p>A cada uno de nuestros estudiantes: los esperamos con los brazos abiertos. Cada uno de ustedes es parte fundamental de esta familia que es la IE 7034. Este año vendrá cargado de aprendizajes, desafíos y logros que hoy aún no imaginamos.</p>
+    <p>Recuerden que los docentes estamos aquí para acompañarlos, no solo a aprender, sino a crecer como personas. Así lo entendía Don Enrique Nerini, y así lo vivimos nosotros cada día en estas aulas.</p>
+
+    <h2>Mensaje para las familias</h2>
+    <p>A los padres y madres de familia: su participación activa es fundamental. Un estudiante que siente el respaldo de su familia en casa llega al colegio con más confianza y seguridad. Les invitamos a mantenerse informados a través de nuestra página web y nuestra página oficial de Facebook.</p>
+    <p>Ante cualquier consulta o inquietud, no duden en comunicarse con la dirección o la subdirección de su nivel correspondiente.</p>
+
+  </div>
+
+  <div class="firma">
+    <p style="margin-bottom:1.2rem;">Atentamente,</p>
+    <p><strong>Mg. Ronald Jesús Orellana Zapata</strong></p>
+    <p class="firma-cargo">Director — IE N° 7034 Enrique Nerini Collazos</p>
+  </div>
+
+  <div style="margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--gray-light);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;">
+    <a href="noticias.html" class="back-link" style="margin:0;">← Volver a Noticias</a>
+    <a href="noticia-elecciones.html" style="font-size:.88rem;font-weight:600;color:var(--sky);">Siguiente noticia →</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand"><div style="margin-bottom:.6rem;"><span style="font-family:var(--font-head);font-size:1rem;color:var(--gold);font-weight:900;letter-spacing:.08em;">IE 7034</span><br><span style="font-size:1.1rem;color:var(--white);font-weight:700;">Enrique Nerini Collazos</span></div><p>Ca. Julio Calero cdra. 3, Urb. Barrio Chorrillos<br>Lima, Perú</p></div>
+    <div class="footer-col"><h4>Menú</h4><a href="index.html">Inicio</a><a href="institucion.html">Nuestra Institución</a><a href="noticias.html">Noticias</a><a href="contacto.html">Contacto</a></div>
+    <div class="footer-col"><h4>Síguenos</h4><a href="https://www.facebook.com/IE7034NERINI.OFICIAL/?locale=es_LA" target="_blank" style="color:#F4F8FC;font-weight:600;">📘 Facebook Oficial</a></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Todos los derechos reservados.</span><a href="https://www.facebook.com/IE7034NERINI.OFICIAL/?locale=es_LA" target="_blank" style="color:var(--sky-light);font-weight:600;">📘 Facebook Oficial</a></div>
+</footer>
+</div>
+<script src="shared.js"></script>
+</body>
+</html>
