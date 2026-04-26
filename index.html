@@ -125,6 +125,18 @@
     padding: calc(var(--nav-h) + 2rem) clamp(1.5rem, 5vw, 3rem) 2.5rem;
   }
 }
+@media (max-width: 768px) {
+  .bienvenida {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .bienvenida-img {
+    order: 2;        /* imagen va abajo */
+  }
+  .bienvenida-text {
+    order: 1;        /* texto va arriba */
+  }
+}
 </style>
 </style>
 </head>
@@ -260,6 +272,7 @@
       <a href="inicial.html">Nivel Inicial</a>
       <a href="primaria.html">Nivel Primaria</a>
       <a href="secundaria.html">Nivel Secundaria</a>
+      <a href="noticias.html">Noticias</a>
       <a href="contacto.html">Contacto</a>
     </div>
     <div class="footer-col">
